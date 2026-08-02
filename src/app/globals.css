@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #5232e0; /* Uzum-style indigo-violet */
+  --color-brand-dark: #3f22b8;
+  --color-brand-light: #eeebfd; /* subtle tint for hover/bg accents */
+  --color-badge-blue: #2f80ed;
+  --color-badge-green: #27ae60;
+  --color-badge-orange: #f2994a;
+  --color-badge-red: #eb5757;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #111827;
+  background: #f5f5f7;
+}
+
+.price-current {
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+.price-compare {
+  color: #9ca3af;
+  text-decoration: line-through;
+}

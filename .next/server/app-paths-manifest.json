@@ -1,0 +1,8 @@
+{
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(auth)/register/page": "app/(auth)/register/page.js",
+  "/(storefront)/catalog/[categorySlug]/page": "app/(storefront)/catalog/[categorySlug]/page.js",
+  "/(storefront)/page": "app/(storefront)/page.js",
+  "/(storefront)/pickup-points/page": "app/(storefront)/pickup-points/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
+}

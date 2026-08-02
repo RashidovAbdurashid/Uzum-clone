@@ -1,0 +1,35 @@
+{
+  "node": {
+    "402eaf73b147e32e2dc68a71482dfd5fd41a71dd1d": {
+      "workers": {
+        "app/(auth)/register/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "requestOtpAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/(auth)/register/page": "action-browser"
+      },
+      "exportedName": "requestOtpAction",
+      "filename": "src/actions/auth.ts"
+    },
+    "4094db56ee71e4cb80de75d319de6930dc66667794": {
+      "workers": {
+        "app/(auth)/register/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "registerAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/(auth)/register/page": "action-browser"
+      },
+      "exportedName": "registerAction",
+      "filename": "src/actions/auth.ts"
+    }
+  },
+  "edge": {}
+}

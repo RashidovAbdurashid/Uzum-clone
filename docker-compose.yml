@@ -1,0 +1,64 @@
+# NOTE: not required to run the app right now — the app currently uses an
+# in-memory mock database and in-memory OTP store (see src/lib/mock-db.ts and
+# src/lib/otp-store.ts), so `npm run dev` works with zero external services.
+# This file documents the infrastructure for when you reintroduce a real
+# database/cache in a later phase.
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: uzum-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: uzum
+      POSTGRES_PASSWORD: uzum
+      POSTGRES_DB: uzum_clone
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U uzum"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: uzum-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.12
+    container_name: uzum-meilisearch
+    restart: unless-stopped
+    environment:
+      MEILI_MASTER_KEY: masterKey
+      MEILI_ENV: development
+    ports:
+      - "7700:7700"
+    volumes:
+      - meilisearch_data:/meili_data
+
+  minio:
+    image: minio/minio
+    container_name: uzum-minio
+    restart: unless-stopped
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
+  meilisearch_data:
+  minio_data:

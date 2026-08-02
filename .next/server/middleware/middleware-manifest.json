@@ -1,0 +1,42 @@
+{
+  "sorted_middleware": [],
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/_a634e69e._.js",
+        "server/edge/chunks/node_modules_@auth_core_870634f3._.js",
+        "server/edge/chunks/node_modules_jose_dist_browser_e8c40489._.js",
+        "server/edge/chunks/node_modules_5e68f179._.js",
+        "server/edge/chunks/[root-of-the-server]__bf85e39e._.js",
+        "server/edge/chunks/turbopack-edge-wrapper_dc1dc089.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/admin/:path*{(\\.json|\\.rsc|\\.segments/.+\\.segment\\.rsc)}?",
+          "originalSource": "/admin/:path*"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/seller/:path*{(\\.json|\\.rsc|\\.segments/.+\\.segment\\.rsc)}?",
+          "originalSource": "/seller/:path*"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/account/:path*{(\\.json|\\.rsc|\\.segments/.+\\.segment\\.rsc)}?",
+          "originalSource": "/account/:path*"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "nJ4s9BCSdvsYGjwqOZOLm8o5+APS4CZjJ5qWK1IbJds=",
+        "__NEXT_PREVIEW_MODE_ID": "fb5607361953437b7da4164427d63948",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "90a450ad6a8179115659a7de35f1a0a144003f386221ba747e7189506e2e74c4",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "3c1c1c0fdb1f324baabd5ccccb85cedbc0e954d4cd1095c326b62634d9836be4"
+      }
+    }
+  },
+  "instrumentation": null,
+  "functions": {}
+}

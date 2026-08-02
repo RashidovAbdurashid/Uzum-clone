@@ -1,0 +1,27 @@
+{
+  "common": {
+    "search": "Mahsulot va kategoriyalarni qidirish",
+    "catalog": "Katalog",
+    "favorites": "Sevimlilar",
+    "cart": "Savat",
+    "login": "Kirish",
+    "myOrders": "Buyurtmalarim",
+    "pickupPoints": "Olib ketish punktlari",
+    "becomeSeller": "Sotuvchi bo'ling",
+    "faq": "Savol-javob"
+  },
+  "footer": {
+    "about": "Biz haqimizda",
+    "forUsers": "Foydalanuvchilarga",
+    "forBusiness": "Tadbirkorlar uchun",
+    "getApp": "Ilovani yuklab oling",
+    "copyright": "© {year} Uzum Market. Barcha huquqlar himoyalangan."
+  },
+  "home": {
+    "popular": "Ommabop",
+    "newArrivals": "Yangiliklar",
+    "discounts": "Chegirmalar",
+    "recommended": "Siz uchun tavsiyalar",
+    "viewAll": "Barchasini ko'rish"
+  }
+}

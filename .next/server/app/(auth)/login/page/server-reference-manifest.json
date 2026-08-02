@@ -1,0 +1,20 @@
+{
+  "node": {
+    "402eaf73b147e32e2dc68a71482dfd5fd41a71dd1d": {
+      "workers": {
+        "app/(auth)/login/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "requestOtpAction",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/(auth)/login/page": "action-browser"
+      },
+      "exportedName": "requestOtpAction",
+      "filename": "src/actions/auth.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Abdurashid/Desktop/uzum-clone/src/components/shared/QueryProvider.tsx"],"sourcesContent":["\"use client\";\n\nimport { useState } from \"react\";\nimport { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\n\nexport function QueryProvider({ children }: { children: React.ReactNode }) {\n  const [client] = useState(\n    () =>\n      new QueryClient({\n        defaultOptions: {\n          queries: {\n            staleTime: 60 * 1000,\n            refetchOnWindowFocus: false,\n          },\n        },\n      })\n  );\n\n  return <QueryClientProvider client={client}>{children}</QueryClientProvider>;\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAAA;AAHA;;;;AAKO,SAAS,cAAc,EAAE,QAAQ,EAAiC;IACvE,MAAM,CAAC,OAAO,GAAG,IAAA,iNAAQ,EACvB,IACE,IAAI,4LAAW,CAAC;YACd,gBAAgB;gBACd,SAAS;oBACP,WAAW,KAAK;oBAChB,sBAAsB;gBACxB;YACF;QACF;IAGJ,qBAAO,8OAAC,6MAAmB;QAAC,QAAQ;kBAAS;;;;;;AAC/C","debugId":null}}]
+}
